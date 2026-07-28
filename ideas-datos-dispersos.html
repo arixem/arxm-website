@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Datos dispersos: el problema operativo detrás de muchas iniciativas de IA | Arixem</title>
+        <meta
+            name="description"
+            content="Conoce por qué los datos dispersos, las reglas no documentadas y la falta de trazabilidad pueden limitar iniciativas de IA, automatización e integración."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Datos dispersos: el problema operativo detrás de muchas iniciativas de IA | Arixem" />
+        <meta
+            property="og:description"
+            content="Una reflexión de Arixem sobre por qué la información dispersa, las reglas no documentadas y la falta de trazabilidad pueden limitar iniciativas de IA, automatización e integración."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.arixem.com.mx/ideas-datos-dispersos.html" />
+        <link rel="icon" type="image/png" sizes="56x56" href="assets/images/fav-icon/icon.png" />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/animate.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/animated-text.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/all.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/flaticon.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/theme-default.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/bootstrap-icons.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/scrollCue.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/dark.css" type="text/css" media="all" />
+    </head>
+
+    <body class="arx-article">
+        <div class="loader_bg">
+            <div class="main-page">
+                <div class="loader">
+                    <div class="spin-blend"></div>
+                    <div class="spin-blend"></div>
+                    <div class="spin-blend"></div>
+                    <div class="spin-blend"></div>
+                    <div class="spin-blend"></div>
+                </div>
+                <div class="loading-text">
+                    <div class="letter">C</div>
+                    <div class="letter">a</div>
+                    <div class="letter">r</div>
+                    <div class="letter">g</div>
+                    <div class="letter">a</div>
+                    <div class="letter">n</div>
+                    <div class="letter">d</div>
+                    <div class="letter">o</div>
+                    <div class="letter">.</div>
+                    <div class="letter">.</div>
+                    <div class="letter">.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="xs-sidebar-group info-group">
+            <div class="xs-overlay xs-bg-black"></div>
+            <div class="xs-sidebar-widget">
+                <div class="sidebar-widget-container">
+                    <div class="widget-heading">
+                        <a href="#" class="close-side-widget" aria-label="Cerrar panel lateral">
+                            <i class="far fa-times-circle"></i>
+                        </a>
+                    </div>
+                    <div class="sidebar-textwidget">
+                        <div class="sidebar-info-contents">
+                            <div class="content-inner">
+                                <div class="nav-logo">
+                                    <a href="index.html"><img src="assets/images/home-1/f-logo.png" alt="Arixem" /></a>
+                                </div>
+                                <div class="content-box">
+                                    <h2>Diseñamos tecnología con criterio</h2>
+                                    <p class="text">
+                                        Arixem ayuda a entender procesos críticos, identificar fricción operativa y
+                                        validar soluciones aplicables con IA, automatización, software y datos.
+                                    </p>
+                                </div>
+                                <div class="contact-info">
+                                    <h2>Contacto</h2>
+                                    <ul class="list-style-one">
+                                        <li><span class="icon flaticon-email"></span>contacto@arixem.com.mx</li>
+                                        <li>
+                                            <span><i class="bi bi-telephone-inbound"></i></span>(+52) 55-8000-8348
+                                        </li>
+                                        <li>
+                                            <span><i class="bi bi-geo-alt"></i></span>Javier Barros Sierra 540 Torre 1
+                                            Piso 5, Santa Fe, Ciudad de México.
+                                        </li>
+                                        <li>
+                                            <span><i class="bi bi-clock"></i></span>Lunes a Viernes: 09.00 a 18.00
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="social-box">
+                                    <li class="youtube">
+                                        <a
+                                            href="https://www.youtube.com/@arixemtechnologies"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="fab fa-youtube"
+                                            aria-label="YouTube de Arixem"
+                                        ></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sticky-header" class="Technology_nav_manu">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a class="logo_img" href="index.html" title="Arixem">
+                                <img src="assets/images/home-1/main-logo.png" alt="Arixem" />
+                            </a>
+                            <a class="main_sticky" href="index.html" title="Arixem">
+                                <img src="assets/images/home-1/main-logo.png" alt="Arixem" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <nav class="Technology_menu">
+                            <ul class="nav_scroll">
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="service.html">Servicios</a></li>
+                                <li><a href="https://www.arixemcore.com/">Arixem Core</a></li>
+                                <li><a href="cases.html">Casos de uso</a></li>
+                                <li><a href="ideas.html">Centro de Ideas</a></li>
+                                <li><a href="about.html">Quiénes somos</a></li>
+                                <li><a href="contact.html">Contacto</a></li>
+                            </ul>
+                            <a class="arx-nav-cta" href="contact.html">Explorar tu proceso</a>
+                            <div class="searchs-box-btn searchs-box-outer">
+                                <div class="nav-btn navSidebar-btn">
+                                    <a href="#" aria-label="Abrir panel lateral"><i class="fas fa-bars"></i></a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
+            <div class="mobile-menu">
+                <nav class="Technology_menu">
+                    <ul class="nav_scroll">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="service.html">Servicios</a></li>
+                        <li><a href="https://www.arixemcore.com/">Arixem Core</a></li>
+                        <li><a href="cases.html">Casos de uso</a></li>
+                        <li><a href="ideas.html">Centro de Ideas</a></li>
+                        <li><a href="about.html">Quiénes somos</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="contact.html">Explorar tu proceso</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <main>
+            <article>
+                <header class="arx-article-hero">
+                    <div class="container">
+                        <div class="arx-article-hero-grid">
+                            <div class="arx-article-hero-copy">
+                                <p class="arx-eyebrow">Centro de Ideas · Datos y trazabilidad</p>
+                                <h1>Datos dispersos: el problema operativo detrás de muchas iniciativas de IA</h1>
+                                <p class="arx-article-lead">
+                                    Muchas iniciativas de inteligencia artificial no se detienen por falta de modelos,
+                                    sino por falta de información confiable, conectada y trazable.
+                                </p>
+                                <div class="arx-article-meta" aria-label="Datos del artículo">
+                                    <span>Datos y trazabilidad</span>
+                                    <span>5–6 min</span>
+                                </div>
+                            </div>
+                            <div class="arx-article-hero-panel" aria-label="Mapa conceptual del artículo">
+                                <span>Fuentes</span>
+                                <span>Reglas</span>
+                                <span>Cruces</span>
+                                <span>Excepciones</span>
+                                <span>Trazabilidad</span>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="arx-article-section arx-article-opening">
+                    <div class="container">
+                        <div class="arx-article-body">
+                            <blockquote>
+                                “La IA puede analizar información, pero no puede generar confianza si las fuentes,
+                                reglas y excepciones no están claras.”
+                            </blockquote>
+
+                            <p>
+                                Muchas iniciativas de inteligencia artificial no se detienen por falta de modelos, sino
+                                por falta de información confiable, conectada y trazable.
+                            </p>
+                            <p>
+                                En muchas organizaciones, la conversación sobre inteligencia artificial empieza
+                                demasiado tarde.
+                            </p>
+                            <p>
+                                Se habla del modelo, del asistente, del copiloto, del dashboard o de la automatización,
+                                pero no siempre se revisa primero una pregunta más básica:
+                            </p>
+                            <p><strong>¿La información que alimentará esa solución existe, coincide y puede confiarse?</strong></p>
+                            <p>
+                                La IA puede analizar, clasificar, sugerir, resumir o priorizar. Pero su capacidad
+                                depende de la calidad operativa del entorno donde se aplica. Si los datos viven en
+                                archivos separados, sistemas desconectados, reportes manuales o fuentes que no coinciden,
+                                el problema no empieza en el modelo.
+                            </p>
+                            <p>Empieza en la operación.</p>
+                            <p>
+                                Los datos dispersos no son solo un problema técnico. Son una señal de cómo trabaja la
+                                empresa: qué fuentes usa, qué revisa manualmente, qué reglas no están documentadas y
+                                dónde se pierde trazabilidad.
+                            </p>
+                            <p>
+                                Cuando esa base no está clara, una solución inteligente puede terminar respondiendo sobre
+                                información incompleta, duplicada o contradictoria.
+                            </p>
+
+                            <h2>El problema no siempre es falta de IA</h2>
+                            <p>
+                                Muchas empresas creen que necesitan inteligencia artificial cuando en realidad necesitan
+                                entender mejor cómo circula su información.
+                            </p>
+                            <p>
+                                Un equipo puede tener datos en el ERP, reportes en Excel, documentos en carpetas
+                                compartidas, evidencias por correo, información bancaria en archivos descargados,
+                                registros contables en otro sistema y validaciones manuales en hojas auxiliares.
+                            </p>
+                            <p>Todo existe. Pero no necesariamente está conectado.</p>
+                            <p>
+                                Y cuando la información no está conectada, la operación depende de personas que saben
+                                dónde buscar, qué archivo revisar, qué campo comparar, qué diferencia ignorar y qué
+                                excepción escalar.
+                            </p>
+                            <p>
+                                Ese conocimiento tiene valor, pero también representa una fragilidad: si vive solo en la
+                                experiencia del equipo, no siempre puede escalarse, auditarse o convertirse en una
+                                solución más estructurada.
+                            </p>
+                            <p>
+                                En esos casos, agregar IA encima de fuentes dispersas puede crear una nueva capa de
+                                complejidad, no necesariamente claridad.
+                            </p>
+
+                            <h2>Cuando la información no coincide, la revisión se vuelve el proceso</h2>
+                            <p>
+                                En operaciones reales, el problema no siempre es que falten datos. Muchas veces sobran
+                                fuentes.
+                            </p>
+                            <p>La dificultad aparece cuando esas fuentes no dicen exactamente lo mismo.</p>
+                            <p>
+                                Un monto no coincide. Una fecha cambia. Un identificador falta. Un documento existe, pero
+                                no está relacionado con el movimiento correcto. Un reporte resume información, pero no
+                                permite ver el detalle. Un archivo se actualizó, pero otro quedó desfasado.
+                            </p>
+                            <p>
+                                Cuando eso ocurre, el equipo deja de operar solo el proceso y empieza a operar la
+                                reconciliación entre fuentes.
+                            </p>
+                            <p>La revisión manual se convierte en el mecanismo para recuperar confianza.</p>
+                            <p>
+                                Este punto es clave: la revisión no siempre existe porque el equipo sea ineficiente.
+                                Muchas veces existe porque la información no está suficientemente estructurada para
+                                confiar en ella sin validarla.
+                            </p>
+                            <p>
+                                Ahí es donde muchas iniciativas tecnológicas se complican. Intentan automatizar o
+                                analizar una operación sin resolver primero cómo se conectan sus fuentes.
+                            </p>
+
+                            <h2>Datos dispersos también significan reglas dispersas</h2>
+                            <p>
+                                Cuando la información vive en distintos lugares, las reglas también suelen estar
+                                distribuidas.
+                            </p>
+                            <p>
+                                Una regla puede estar en el sistema. Otra en un archivo. Otra en una persona. Otra en una
+                                práctica informal que todos conocen, pero nadie documentó. Otra en una excepción que se
+                                resuelve “como siempre se ha hecho”.
+                            </p>
+                            <p>El problema no es solo dónde están los datos. Es cómo se interpretan.</p>
+                            <p>
+                                Una solución tecnológica necesita saber qué fuente tiene prioridad, qué hacer cuando
+                                existe una diferencia, qué casos deben escalarse, qué tolerancias son aceptables y qué
+                                resultado se considera correcto.
+                            </p>
+                            <p>
+                                Sin esas reglas, la tecnología puede procesar información, pero no necesariamente
+                                producir confianza.
+                            </p>
+                            <p>
+                                Por eso, antes de construir una solución con IA, conviene entender no solo qué datos
+                                existen, sino qué criterios les dan sentido.
+                            </p>
+
+                            <h2>La trazabilidad es más importante de lo que parece</h2>
+                            <p>En muchos proyectos, la trazabilidad se trata como un detalle técnico.</p>
+                            <p>No lo es.</p>
+                            <p>La trazabilidad es lo que permite responder preguntas básicas:</p>
+                            <ul class="arx-article-question-list">
+                                <li>¿De dónde salió este dato?</li>
+                                <li>¿Qué fuente se usó?</li>
+                                <li>¿Qué regla se aplicó?</li>
+                                <li>¿Qué cambió entre una versión y otra?</li>
+                                <li>¿Por qué este caso fue marcado como excepción?</li>
+                                <li>¿Quién revisó o validó el resultado?</li>
+                            </ul>
+                            <p>
+                                Sin trazabilidad, una solución puede entregar una respuesta, pero no necesariamente
+                                generar confianza.
+                            </p>
+                            <p>
+                                Esto es especialmente importante en procesos críticos: conciliaciones, revisión
+                                documental, validaciones financieras, reportes ejecutivos, operaciones comerciales,
+                                auditorías internas o flujos donde una decisión depende de múltiples fuentes.
+                            </p>
+                            <p>
+                                Una salida puede parecer correcta, pero si no puede explicarse, revisarse o reconstruirse,
+                                será difícil integrarla a la operación.
+                            </p>
+
+                            <div class="arx-article-clarity">
+                                <h2>Qué conviene ordenar antes de aplicar IA</h2>
+                                <p class="arx-article-clarity-intro">
+                                    Antes de pensar en modelos o copilotos, conviene observar la operación desde las
+                                    fuentes, las relaciones, las reglas, las excepciones y las salidas que el equipo
+                                    necesita revisar.
+                                </p>
+                                <div class="arx-article-clarity-grid">
+                                    <div class="arx-article-clarity-item">
+                                        <span>01</span>
+                                        <h3>Fuentes de información</h3>
+                                        <p>
+                                            Qué sistemas, archivos, documentos o reportes participan en el proceso. No
+                                            se trata solo de listar fuentes. Se trata de entender cuáles son críticas,
+                                            cuáles son auxiliares, cuáles se duplican y cuáles generan más diferencias.
+                                        </p>
+                                    </div>
+                                    <div class="arx-article-clarity-item">
+                                        <span>02</span>
+                                        <h3>Relación entre datos</h3>
+                                        <p>
+                                            Qué campos permiten conectar una fuente con otra. Puede ser un folio, un
+                                            UUID, una fecha, un monto, una referencia, un RFC, un cliente, una cuenta,
+                                            un movimiento o una combinación de señales. Cuando esa relación no está
+                                            clara, el cruce depende de criterio manual.
+                                        </p>
+                                    </div>
+                                    <div class="arx-article-clarity-item">
+                                        <span>03</span>
+                                        <h3>Reglas de validación</h3>
+                                        <p>
+                                            Qué condiciones hacen que un dato sea aceptable, dudoso o incorrecto. Aquí
+                                            aparecen tolerancias, excepciones, fechas desplazadas, duplicados,
+                                            diferencias menores, documentos faltantes o casos que requieren revisión.
+                                        </p>
+                                    </div>
+                                    <div class="arx-article-clarity-item">
+                                        <span>04</span>
+                                        <h3>Excepciones</h3>
+                                        <p>
+                                            Qué casos deben separarse, priorizarse o revisarse con mayor cuidado. No
+                                            todas las diferencias tienen el mismo peso. Algunas requieren seguimiento;
+                                            otras solo necesitan contexto.
+                                        </p>
+                                    </div>
+                                    <div class="arx-article-clarity-item">
+                                        <span>05</span>
+                                        <h3>Salidas revisables</h3>
+                                        <p>
+                                            Qué necesita ver el equipo para confiar en el resultado. Una salida útil no
+                                            solo muestra “correcto” o “incorrecto”. Debe explicar qué se comparó, qué
+                                            coincidió, qué no coincidió y qué requiere atención.
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="arx-article-clarity-note">
+                                    La información no necesita estar perfecta para empezar, pero sí debe poder
+                                    entenderse, conectarse y revisarse.
+                                </p>
+                            </div>
+
+                            <h2>Señales de que los datos dispersos ya están afectando la operación</h2>
+                            <p>
+                                Hay señales claras de que la dispersión de información ya no es solo una incomodidad,
+                                sino un problema operativo.
+                            </p>
+                            <p>
+                                La primera es que el equipo pase más tiempo buscando información que tomando decisiones.
+                            </p>
+                            <p>
+                                La segunda es que existan múltiples versiones de la verdad: distintos archivos, reportes
+                                o sistemas que muestran cifras parecidas, pero no iguales.
+                            </p>
+                            <p>
+                                La tercera es que la revisión dependa de personas específicas. Si solo alguien sabe cómo
+                                cruzar, interpretar o validar la información, el proceso tiene un punto de fragilidad.
+                            </p>
+                            <p>
+                                La cuarta es que las excepciones no estén clasificadas. Todo se revisa igual porque no
+                                existe una forma clara de priorizar.
+                            </p>
+                            <p>
+                                La quinta es que los reportes lleguen tarde o no expliquen qué acción debe tomarse.
+                            </p>
+                            <p>
+                                Cuando estas señales aparecen, la empresa no necesariamente necesita más herramientas.
+                                Primero necesita entender cómo se mueve su información.
+                            </p>
+
+                            <h2>IA sobre datos dispersos: el riesgo de una respuesta sin contexto</h2>
+                            <p>
+                                La inteligencia artificial puede ayudar a trabajar con información compleja, pero no
+                                elimina la necesidad de contexto.
+                            </p>
+                            <p>
+                                Si una solución recibe datos incompletos, contradictorios o desconectados, puede generar
+                                una salida aparentemente útil, pero difícil de validar. Y en procesos críticos, una
+                                respuesta que no puede revisarse puede convertirse en un nuevo riesgo.
+                            </p>
+                            <p>
+                                El valor no está solo en obtener una respuesta. Está en saber por qué esa respuesta
+                                tiene sentido.
+                            </p>
+                            <p>
+                                Por eso, una iniciativa de IA debería considerar desde el inicio cómo se conectan las
+                                fuentes, cómo se documentan las reglas y cómo se conserva evidencia de cada decisión.
+                            </p>
+                            <p>La pregunta no es únicamente si la IA puede analizar datos.</p>
+                            <p>
+                                <strong>
+                                    La pregunta es si la organización puede confiar en el camino que llevó a ese análisis.
+                                </strong>
+                            </p>
+
+                            <h2>De información dispersa a operación trazable</h2>
+                            <p>Resolver datos dispersos no significa centralizar todo de golpe.</p>
+                            <p>Tampoco significa reemplazar todos los sistemas existentes.</p>
+                            <p>
+                                En muchos casos, el primer avance consiste en construir una capa de entendimiento:
+                                identificar fuentes, mapear relaciones, documentar reglas, clasificar excepciones y
+                                generar salidas que el equipo pueda revisar.
+                            </p>
+                            <p>
+                                Ese trabajo puede parecer menos llamativo que implementar IA de inmediato, pero suele ser
+                                el que permite que la tecnología funcione en operación real.
+                            </p>
+                            <p>
+                                Una operación trazable no es aquella que elimina toda revisión humana. Es aquella donde
+                                la revisión se enfoca en lo que realmente necesita criterio.
+                            </p>
+                            <p>
+                                Cuando la información está mejor conectada, el equipo puede dedicar menos tiempo a
+                                buscar, cruzar y confirmar, y más tiempo a decidir.
+                            </p>
+
+                            <div class="arx-article-compare">
+                                <h2>Datos dispersos / Operación trazable</h2>
+                                <div class="arx-article-compare-grid">
+                                    <div>
+                                        <h3>Datos dispersos</h3>
+                                        <ul>
+                                            <li>Información en sistemas y archivos separados.</li>
+                                            <li>Diferencias que requieren revisión manual.</li>
+                                            <li>Reglas no documentadas.</li>
+                                            <li>Reportes que no explican excepciones.</li>
+                                            <li>Decisiones difíciles de auditar.</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3>Operación trazable</h3>
+                                        <ul>
+                                            <li>Fuentes identificadas.</li>
+                                            <li>Relaciones claras entre datos.</li>
+                                            <li>Reglas de validación documentadas.</li>
+                                            <li>Excepciones clasificadas.</li>
+                                            <li>Salidas revisables y explicables.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2>Antes de pedirle inteligencia a la tecnología, conviene darle contexto</h2>
+                            <p>
+                                La IA puede aportar valor cuando trabaja sobre una operación suficientemente entendida.
+                            </p>
+                            <p>
+                                Pero si la información está dispersa, las reglas son ambiguas y la trazabilidad depende
+                                de memoria o revisión manual, el primer reto no es elegir un modelo.
+                            </p>
+                            <p>El primer reto es construir contexto.</p>
+                            <p>Contexto sobre las fuentes.</p>
+                            <p>Contexto sobre las reglas.</p>
+                            <p>Contexto sobre las excepciones.</p>
+                            <p>Contexto sobre lo que debe revisarse.</p>
+                            <p>Contexto sobre lo que realmente significa un resultado confiable.</p>
+                            <p>
+                                Algunas iniciativas de IA no necesitan empezar con más capacidad tecnológica. Necesitan
+                                empezar con una pregunta más básica:
+                            </p>
+                            <p>
+                                <strong>
+                                    ¿Tenemos la información suficientemente conectada para confiar en lo que queremos
+                                    automatizar, analizar o decidir?
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="arx-article-core">
+                    <div class="container">
+                        <div class="arx-article-core-inner">
+                            <p class="arx-eyebrow">Arixem Core</p>
+                            <h2>De múltiples fuentes a soluciones más estructuradas</h2>
+                            <p>
+                                Cuando los patrones se repiten —fuentes dispersas, reglas no documentadas, cruces
+                                manuales, excepciones y necesidad de trazabilidad— pueden convertirse en soluciones más
+                                estructuradas.
+                            </p>
+                            <p>
+                                Arixem Core nace de esa lógica: convertir experiencia operativa en módulos diseñados para
+                                procesos donde la información, la revisión y la trazabilidad son críticas.
+                            </p>
+                            <p>
+                                Arixem Core Contable nace precisamente de ese tipo de fricción: procesos donde CFDI,
+                                movimientos bancarios, documentos, reglas contables y revisión manual deben conectarse
+                                con mayor claridad para apoyar conciliaciones y validaciones.
+                            </p>
+                            <p>
+                                No se trata de reemplazar el criterio del equipo. Se trata de darle una base más ordenada
+                                para revisar mejor.
+                            </p>
+                            <a class="arx-btn arx-btn-secondary" href="https://www.arixemcore.com/">Conocer Arixem Core</a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <section class="arx-final-cta">
+                <div class="container">
+                    <div class="arx-final-cta-inner">
+                        <h2>¿Tu operación depende de múltiples fuentes que no siempre coinciden?</h2>
+                        <p>
+                            Podemos ayudarte a entender dónde se dispersa la información, qué reglas hacen falta y si
+                            tiene sentido estructurar una solución con mayor trazabilidad.
+                        </p>
+                        <div class="arx-actions arx-actions-center">
+                            <a class="arx-btn arx-btn-primary" href="contact.html">Explorar tu proceso</a>
+                            <a class="arx-btn arx-btn-secondary" href="ideas.html">Volver al Centro de Ideas</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget-contact">
+                            <div class="footer-widget-logo">
+                                <a href="index.html"><img src="assets/images/home-1/f-logo.png" alt="Arixem" /></a>
+                            </div>
+                            <div class="footer-disc">
+                                <p>Diseñamos tecnología con criterio para resolver procesos reales.</p>
+                                <p>
+                                    Arixem es una firma tecnológica enfocada en diseñar soluciones inteligentes para
+                                    procesos críticos de negocio, integrando IA, automatización, software y datos con
+                                    enfoque práctico y resultados medibles.
+                                </p>
+                            </div>
+                            <div class="footer_icon">
+                                <a
+                                    href="https://www.youtube.com/@arixemtechnologies"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="YouTube de Arixem"
+                                    ><i class="fab fa-youtube"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget-content">
+                            <div class="footer-widget-title">
+                                <h4>Accesos</h4>
+                            </div>
+                            <div class="footer-widget-menu">
+                                <ul>
+                                    <li><a href="index.html"><span><i class="fas fa-circle"></i></span>Inicio</a></li>
+                                    <li>
+                                        <a href="about.html"><span><i class="fas fa-circle"></i></span>Quiénes somos</a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html"><span><i class="fas fa-circle"></i></span>Servicios</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.arixemcore.com/">
+                                            <span><i class="fas fa-circle"></i></span>Arixem Core</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="cases.html"><span><i class="fas fa-circle"></i></span>Casos de uso</a>
+                                    </li>
+                                    <li>
+                                        <a href="ideas.html"><span><i class="fas fa-circle"></i></span>Centro de Ideas</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html"><span><i class="fas fa-circle"></i></span>Contacto</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.arixem.com.mx/documentos/aviso_priv_final.pdf"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <span><i class="fas fa-circle"></i></span>Aviso de privacidad</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget-content">
+                            <div class="footer-widget-title">
+                                <h4>Servicios</h4>
+                            </div>
+                            <div class="footer-widget-menu">
+                                <ul>
+                                    <li>
+                                        <a href="service.html" class="link-service">
+                                            <span><i class="fas fa-circle"></i></span>IA & Machine Learning</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="link-service">
+                                            <span><i class="fas fa-circle"></i></span>RPA</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="link-service">
+                                            <span><i class="fas fa-circle"></i></span>Desarrollo de Software</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="link-service">
+                                            <span><i class="fas fa-circle"></i></span>ERP & BI</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="link-service">
+                                            <span><i class="fas fa-circle"></i></span>CRM</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="footer-bottom-content">
+                            <h4>Arixem® - Todos los derechos reservados <i id="year" style="font-size: 13px"></i></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
+        <script src="assets/js/jquery.meanmenu.js"></script>
+        <script src="assets/js/arx-site.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0LSPEP4LR"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-Q0LSPEP4LR");
+        </script>
+    </body>
+</html>
