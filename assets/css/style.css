@@ -3091,7 +3091,9 @@ body.arx-home {
 }
 
 .arx-home .Technology_menu > ul > li > a:hover,
-.arx-home .sticky .Technology_menu > ul > li > a:hover {
+.arx-home .sticky .Technology_menu > ul > li > a:hover,
+.arx-home .Technology_menu > ul > li > a.active,
+.arx-home .sticky .Technology_menu > ul > li > a.active {
     border-bottom-color: var(--arixem-orange);
     color: var(--arixem-orange) !important;
 }
@@ -3621,7 +3623,9 @@ body.arx-services {
 }
 
 .arx-services .Technology_menu > ul > li > a:hover,
-.arx-services .sticky .Technology_menu > ul > li > a:hover {
+.arx-services .sticky .Technology_menu > ul > li > a:hover,
+.arx-services .Technology_menu > ul > li > a.active,
+.arx-services .sticky .Technology_menu > ul > li > a.active {
     border-bottom-color: var(--arixem-orange);
     color: var(--arixem-orange) !important;
 }
@@ -3959,7 +3963,9 @@ body.arx-about {
 }
 
 .arx-about .Technology_menu > ul > li > a:hover,
-.arx-about .sticky .Technology_menu > ul > li > a:hover {
+.arx-about .sticky .Technology_menu > ul > li > a:hover,
+.arx-about .Technology_menu > ul > li > a.active,
+.arx-about .sticky .Technology_menu > ul > li > a.active {
     border-bottom-color: var(--arixem-orange);
     color: var(--arixem-orange) !important;
 }
@@ -4194,7 +4200,9 @@ body.arx-cases {
 }
 
 .arx-cases .Technology_menu > ul > li > a:hover,
-.arx-cases .sticky .Technology_menu > ul > li > a:hover {
+.arx-cases .sticky .Technology_menu > ul > li > a:hover,
+.arx-cases .Technology_menu > ul > li > a.active,
+.arx-cases .sticky .Technology_menu > ul > li > a.active {
     border-bottom-color: var(--arixem-orange);
     color: var(--arixem-orange) !important;
 }
@@ -4631,7 +4639,9 @@ body.arx-ideas {
 }
 
 .arx-ideas .Technology_menu > ul > li > a:hover,
-.arx-ideas .sticky .Technology_menu > ul > li > a:hover {
+.arx-ideas .sticky .Technology_menu > ul > li > a:hover,
+.arx-ideas .Technology_menu > ul > li > a.active,
+.arx-ideas .sticky .Technology_menu > ul > li > a.active {
     border-bottom-color: var(--arixem-orange);
     color: var(--arixem-orange) !important;
 }
@@ -4983,7 +4993,9 @@ body.arx-article {
 }
 
 .arx-article .Technology_menu > ul > li > a:hover,
-.arx-article .sticky .Technology_menu > ul > li > a:hover {
+.arx-article .sticky .Technology_menu > ul > li > a:hover,
+.arx-article .Technology_menu > ul > li > a.active,
+.arx-article .sticky .Technology_menu > ul > li > a.active {
     border-bottom-color: var(--arixem-orange);
     color: var(--arixem-orange) !important;
 }
@@ -5356,7 +5368,9 @@ body.arx-contact {
 }
 
 .arx-contact .Technology_menu > ul > li > a:hover,
-.arx-contact .sticky .Technology_menu > ul > li > a:hover {
+.arx-contact .sticky .Technology_menu > ul > li > a:hover,
+.arx-contact .Technology_menu > ul > li > a.active,
+.arx-contact .sticky .Technology_menu > ul > li > a.active {
     border-bottom-color: var(--arixem-orange);
     color: var(--arixem-orange) !important;
 }
