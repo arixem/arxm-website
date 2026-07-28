@@ -1,0 +1,10 @@
+# Variables de entorno locales para `wrangler pages dev` (contiene NOTIFICATIONS_KEY).
+# La key real vive como secreto encriptado en Cloudflare Pages, nunca en git.
+.dev.vars
+.dev.vars.*
+
+# Cloudflare Pages / Wrangler
+.wrangler/
+
+# Instrucciones locales para Claude Code (no se versiona)
+CLAUDE.md

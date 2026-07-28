@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Por qué automatizar sin rediseñar el proceso puede fallar | Arixem</title>
+        <meta
+            name="description"
+            content="Descubre por qué automatizar sin entender el proceso puede escalar fricción, reglas ambiguas e información dispersa. Una reflexión de Arixem sobre automatización con criterio operativo."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Por qué automatizar sin rediseñar el proceso puede fallar | Arixem" />
+        <meta
+            property="og:description"
+            content="Una reflexión de Arixem sobre por qué acelerar un proceso desordenado puede aumentar fricción, ocultar errores o volver más difícil controlar la operación."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.arixem.com.mx/ideas-automatizacion-proceso.html" />
+        <link rel="icon" type="image/png" sizes="56x56" href="assets/images/fav-icon/icon.png" />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/animate.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/animated-text.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/all.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/flaticon.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/theme-default.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/bootstrap-icons.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/scrollCue.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/dark.css" type="text/css" media="all" />
+    </head>
+
+    <body class="arx-article">
+        <div class="xs-sidebar-group info-group">
+            <div class="xs-overlay xs-bg-black"></div>
+            <div class="xs-sidebar-widget">
+                <div class="sidebar-widget-container">
+                    <div class="widget-heading">
+                        <a href="#" class="close-side-widget" aria-label="Cerrar panel lateral">
+                            <i class="far fa-times-circle"></i>
+                        </a>
+                    </div>
+                    <div class="sidebar-textwidget">
+                        <div class="sidebar-info-contents">
+                            <div class="content-inner">
+                                <div class="nav-logo">
+                                    <a href="index.html"><img src="assets/images/home-1/f-logo.png" alt="Arixem" /></a>
+                                </div>
+                                <div class="content-box">
+                                    <h2>Diseñamos tecnología con criterio</h2>
+                                    <p class="text">
+                                        Arixem ayuda a entender procesos críticos, identificar fricción operativa y
+                                        validar soluciones aplicables con IA, automatización, software y datos.
+                                    </p>
+                                </div>
+                                <div class="contact-info">
+                                    <h2>Contacto</h2>
+                                    <ul class="list-style-one">
+                                        <li><span class="icon flaticon-email"></span>contacto@arixem.com.mx</li>
+                                        <li>
+                                            <span><i class="bi bi-telephone-inbound"></i></span>(+52) 55-8000-8348
+                                        </li>
+                                        <li>
+                                            <span><i class="bi bi-geo-alt"></i></span>Javier Barros Sierra 540 Torre 1
+                                            Piso 5, Santa Fe, Ciudad de México.
+                                        </li>
+                                        <li>
+                                            <span><i class="bi bi-clock"></i></span>Lunes a Viernes: 09.00 a 18.00
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="social-box">
+                                    <li class="youtube">
+                                        <a
+                                            href="https://www.youtube.com/@arixemtechnologies"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="fab fa-youtube"
+                                            aria-label="YouTube de Arixem"
+                                        ></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sticky-header" class="Technology_nav_manu">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a class="logo_img" href="index.html" title="Arixem">
+                                <img src="assets/images/home-1/main-logo.png" alt="Arixem" />
+                            </a>
+                            <a class="main_sticky" href="index.html" title="Arixem">
+                                <img src="assets/images/home-1/main-logo.png" alt="Arixem" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <nav class="Technology_menu">
+                            <ul class="nav_scroll">
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="service.html">Servicios</a></li>
+                                <li><a href="https://www.arixemcore.com/">Arixem Core</a></li>
+                                <li><a href="cases.html">Casos de uso</a></li>
+                                <li><a href="ideas.html" class="active" aria-current="page">Centro de Ideas</a></li>
+                                <li><a href="about.html">Quiénes somos</a></li>
+                                <li><a href="contact.html">Contacto</a></li>
+                            </ul>
+                            <a class="arx-nav-cta" href="contact.html">Explorar tu proceso</a>
+                            <div class="searchs-box-btn searchs-box-outer">
+                                <div class="nav-btn navSidebar-btn">
+                                    <a href="#" aria-label="Abrir panel lateral"><i class="fas fa-bars"></i></a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
+            <div class="mobile-menu">
+                <nav class="Technology_menu">
+                    <ul class="nav_scroll">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="service.html">Servicios</a></li>
+                        <li><a href="https://www.arixemcore.com/">Arixem Core</a></li>
+                        <li><a href="cases.html">Casos de uso</a></li>
+                        <li><a href="ideas.html" class="active" aria-current="page">Centro de Ideas</a></li>
+                        <li><a href="about.html">Quiénes somos</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="contact.html">Explorar tu proceso</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <main>
+            <article>
+                <header class="arx-article-hero">
+                    <div class="container">
+                        <div class="arx-article-hero-grid">
+                            <div class="arx-article-hero-copy">
+                                <p class="arx-eyebrow">Centro de Ideas · Automatización con criterio</p>
+                                <h1>Por qué automatizar sin rediseñar el proceso puede fallar</h1>
+                                <p class="arx-article-lead">
+                                    Automatizar puede reducir esfuerzo, pero no corrige por sí sola reglas ambiguas,
+                                    revisiones innecesarias o procesos que dependen de conocimiento no documentado.
+                                </p>
+                                <div class="arx-article-meta" aria-label="Datos del artículo">
+                                    <span>Automatización con criterio</span>
+                                    <span>5–6 min</span>
+                                </div>
+                            </div>
+                            <div class="arx-article-hero-panel" aria-label="Mapa conceptual del artículo">
+                                <span>Proceso</span>
+                                <span>Reglas</span>
+                                <span>Excepciones</span>
+                                <span>Trazabilidad</span>
+                                <span>Control</span>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="arx-article-section arx-article-opening">
+                    <div class="container">
+                        <div class="arx-article-body">
+                            <blockquote>
+                                “La tecnología no convierte el desorden en estructura. Puede amplificar lo que el
+                                proceso ya contiene.”
+                            </blockquote>
+
+                            <p>Automatizar no siempre significa mejorar.</p>
+                            <p>
+                                En muchas organizaciones, cuando una operación se vuelve lenta, repetitiva o costosa, la
+                                primera respuesta suele ser buscar una herramienta que la ejecute más rápido: un flujo,
+                                una integración, una regla programada o una capa de inteligencia artificial.
+                            </p>
+                            <p>
+                                La intención es válida. Reducir carga manual, disminuir errores y liberar tiempo del
+                                equipo puede tener mucho sentido. El problema aparece cuando la tecnología se aplica
+                                sobre un proceso que todavía no se entiende del todo.
+                            </p>
+                            <p>
+                                Porque una herramienta puede ejecutar instrucciones, pero no resolver por sí sola la
+                                ambigüedad que vive detrás de ellas.
+                            </p>
+                            <p>
+                                Un proceso con reglas inconsistentes, excepciones mal documentadas, información dispersa
+                                o dependencias informales puede seguir siendo frágil aunque se lleve a una capa
+                                tecnológica. Incluso puede volverse más difícil de corregir, porque el problema deja de
+                                ser visible y empieza a moverse con mayor velocidad.
+                            </p>
+                            <p>
+                                Sin una base clara, la tecnología puede mover más rápido aquello que todavía no está
+                                suficientemente entendido.
+                            </p>
+
+                            <h2>La velocidad no siempre es claridad</h2>
+                            <p>En operación real, hacer algo más rápido no siempre significa hacerlo mejor.</p>
+                            <p>
+                                Un flujo puede tardar porque tiene pasos innecesarios. Pero también puede tardar porque
+                                contiene validaciones importantes, dependencias críticas o decisiones que aún no están
+                                suficientemente estructuradas.
+                            </p>
+                            <p>
+                                Cuando no se distingue entre esas dos cosas, se corre el riesgo de acelerar partes que
+                                primero debían entenderse.
+                            </p>
+                            <p>
+                                Una revisión manual puede parecer una tarea repetitiva. Pero al observarla con detalle,
+                                puede revelar que el equipo está resolviendo inconsistencias entre sistemas,
+                                interpretando excepciones, corrigiendo datos incompletos o aplicando criterios que nunca
+                                fueron documentados.
+                            </p>
+                            <p>En ese caso, la revisión manual no es solo una ineficiencia. Es una señal.</p>
+                            <p>
+                                Eliminarla sin entender por qué existe puede dejar al proceso sin su último mecanismo de
+                                control.
+                            </p>
+                            <p>La pregunta no debería ser solo: “¿qué podemos automatizar?”</p>
+                            <p>
+                                <strong>La pregunta más importante es: “¿qué está compensando hoy el equipo de forma manual?”</strong>
+                            </p>
+
+                            <h2>Muchos procesos funcionan porque alguien los sostiene</h2>
+                            <p>Hay procesos que parecen funcionar porque el resultado final llega.</p>
+                            <p>
+                                El reporte se entrega. La conciliación se cierra. El cliente recibe respuesta. El
+                                expediente avanza. La operación continúa.
+                            </p>
+                            <p>
+                                Pero al mirar más de cerca, el proceso funciona porque una persona sabe qué revisar, qué
+                                corregir, qué ignorar, qué pedir de nuevo o qué excepción requiere atención.
+                            </p>
+                            <p>Ese conocimiento muchas veces no está en el sistema. Está en la experiencia del equipo.</p>
+                            <p>
+                                Ahí aparece uno de los riesgos más comunes de llevar un flujo a tecnología demasiado
+                                pronto: convertir conocimiento tácito en una regla incompleta.
+                            </p>
+                            <p>
+                                Si la regla no contempla excepciones, si los datos no son consistentes o si el proceso
+                                depende de interpretación humana, la solución puede ejecutar el flujo, pero no
+                                necesariamente sostener la calidad del resultado.
+                            </p>
+                            <p>
+                                El problema no es apoyarse en tecnología. El problema es hacerlo sobre una operación que
+                                todavía depende de criterios invisibles.
+                            </p>
+                            <p>
+                                Antes de mover una tarea a una herramienta, conviene entender qué parte del trabajo es
+                                repetitiva, qué parte es criterio, qué parte es excepción y qué parte existe porque el
+                                proceso no está suficientemente estructurado.
+                            </p>
+
+                            <h2>Cuando la tecnología replica la fricción</h2>
+                            <p>Una solución mal planteada no siempre falla de inmediato.</p>
+                            <p>A veces funciona técnicamente, pero conserva la misma fricción que existía antes.</p>
+                            <p>
+                                Un proceso que dependía de archivos dispersos puede seguir dependiendo de archivos
+                                dispersos, solo que ahora con una capa adicional encima. Una validación poco clara puede
+                                convertirse en una regla programada que nadie entiende. Un reporte tardío puede generarse
+                                más rápido, pero seguir sin explicar qué decisión debe tomarse.
+                            </p>
+                            <p>
+                                La tecnología puede reducir pasos, pero si el diseño operativo no cambia, la complejidad
+                                permanece.
+                            </p>
+                            <p>En algunos casos, incluso aumenta.</p>
+                            <p>
+                                Ahora el equipo no solo debe revisar el proceso original. También debe revisar qué hizo
+                                la solución, por qué lo hizo, con qué datos trabajó y qué excepciones dejó fuera.
+                            </p>
+                            <p>
+                                Cuando eso ocurre, la herramienta deja de reducir carga y empieza a crear una nueva capa
+                                de supervisión.
+                            </p>
+                            <p>
+                                Una solución operativa debería aportar claridad. Si obliga al equipo a revisar
+                                manualmente todo lo que hizo, quizá no se resolvió el problema correcto.
+                            </p>
+
+                            <div class="arx-article-clarity">
+                                <h2>Qué conviene aclarar antes de llevar un proceso a tecnología</h2>
+                                <p class="arx-article-clarity-intro">
+                                    Rediseñar no significa complicar el proceso. Significa entender qué debe mantenerse,
+                                    qué puede simplificarse y qué necesita estructura antes de escalar.
+                                </p>
+                                <div class="arx-article-clarity-grid">
+                                    <div class="arx-article-clarity-item">
+                                        <span>01</span>
+                                        <h3>Secuencia del proceso</h3>
+                                        <p>
+                                            No todos los pasos actuales son necesarios. Algunos nacieron para resolver
+                                            una excepción y con el tiempo se quedaron como parte permanente del flujo.
+                                            Antes de trasladar una operación a una herramienta, conviene distinguir qué
+                                            pasos aportan control y cuáles solo agregan fricción acumulada.
+                                        </p>
+                                    </div>
+                                    <div class="arx-article-clarity-item">
+                                        <span>02</span>
+                                        <h3>Reglas de operación</h3>
+                                        <p>
+                                            Si cada persona interpreta el proceso de forma distinta, llevar esa lógica a
+                                            una solución puede volver rígida una regla que todavía no está alineada. Una
+                                            regla poco clara no mejora por ejecutarse más rápido. Primero necesita
+                                            definirse.
+                                        </p>
+                                    </div>
+                                    <div class="arx-article-clarity-item">
+                                        <span>03</span>
+                                        <h3>Fuentes de información</h3>
+                                        <p>
+                                            Cuando los datos vienen de sistemas, archivos o reportes que no coinciden,
+                                            primero hay que definir qué fuente tiene prioridad y qué ocurre ante una
+                                            diferencia. Sin esa claridad, la solución puede procesar información, pero
+                                            no necesariamente generar confianza.
+                                        </p>
+                                    </div>
+                                    <div class="arx-article-clarity-item">
+                                        <span>04</span>
+                                        <h3>Criterios de revisión</h3>
+                                        <p>
+                                            No toda excepción requiere el mismo nivel de atención. No todo caso debe
+                                            escalarse. No toda validación necesita intervención humana. Antes de acelerar
+                                            la ejecución, conviene distinguir qué debe revisarse, qué puede priorizarse y
+                                            qué puede resolverse con reglas claras.
+                                        </p>
+                                    </div>
+                                    <div class="arx-article-clarity-item">
+                                        <span>05</span>
+                                        <h3>Trazabilidad</h3>
+                                        <p>
+                                            Una solución debe poder explicar qué hizo, con qué información trabajó y por
+                                            qué llegó a un resultado. Sin trazabilidad, la velocidad puede convertirse en
+                                            desconfianza.
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="arx-article-clarity-note">
+                                    La claridad operativa no frena la tecnología. La vuelve más confiable.
+                                </p>
+                            </div>
+
+                            <h2>Señales de que el proceso todavía no está listo</h2>
+                            <p>
+                                Hay señales que indican que conviene ordenar antes de escalar una solución tecnológica.
+                            </p>
+                            <p>
+                                Una de ellas es que el proceso dependa demasiado de “cómo lo hace una persona”. Si el
+                                resultado cambia según quién ejecuta la tarea, probablemente falta estandarizar
+                                criterios.
+                            </p>
+                            <p>
+                                Otra señal es que las excepciones sean más frecuentes que la regla. Si la mayoría de los
+                                casos requiere interpretación, quizá el problema no es la velocidad, sino la falta de
+                                estructura.
+                            </p>
+                            <p>
+                                También conviene detenerse cuando las fuentes de información no coinciden y no existe
+                                una regla clara para resolver diferencias.
+                            </p>
+                            <p>
+                                Lo mismo ocurre cuando nadie puede explicar qué resultado sería correcto, qué error sería
+                                aceptable o qué parte debería revisarse manualmente.
+                            </p>
+                            <p>En esos casos, avanzar demasiado pronto puede dar una falsa sensación de progreso.</p>
+                            <p>La operación se mueve, pero la incertidumbre sigue ahí.</p>
+
+                            <h2>Diseñar con criterio operativo</h2>
+                            <p>La tecnología sí puede generar valor cuando parte de un proceso entendido.</p>
+                            <p>
+                                Puede eliminar tareas repetitivas. Puede reducir capturas manuales. Puede ejecutar
+                                reglas claras. Puede conectar sistemas. Puede generar reportes. Puede ayudar a priorizar
+                                excepciones. Puede liberar al equipo de trabajo operativo que no requiere criterio
+                                humano.
+                            </p>
+                            <p>Pero para lograrlo, debe construirse sobre una base clara.</p>
+                            <p>Primero se entiende el proceso.</p>
+                            <p>Luego se identifican reglas y excepciones.</p>
+                            <p>Después se revisan fuentes de información.</p>
+                            <p>
+                                Más tarde se define qué parte puede ejecutarse de forma sistemática y qué parte debe
+                                seguir siendo revisada.
+                            </p>
+                            <p>
+                                Finalmente, se mide si la solución realmente mejora claridad, trazabilidad y control.
+                            </p>
+                            <p>
+                                Diseñar con criterio no significa avanzar más lento. Significa avanzar sobre una
+                                operación mejor entendida.
+                            </p>
+
+                            <div class="arx-article-compare">
+                                <h2>Automatizar sin rediseñar / Rediseñar antes de escalar</h2>
+                                <div class="arx-article-compare-grid">
+                                    <div>
+                                        <h3>Automatizar sin rediseñar</h3>
+                                        <ul>
+                                            <li>Ejecuta tareas sin cuestionar el flujo.</li>
+                                            <li>Replica reglas incompletas.</li>
+                                            <li>Oculta excepciones bajo una capa tecnológica.</li>
+                                            <li>Acelera revisiones que quizá debían simplificarse.</li>
+                                            <li>Puede aumentar supervisión manual.</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3>Rediseñar antes de escalar</h3>
+                                        <ul>
+                                            <li>Entiende qué parte del proceso genera fricción.</li>
+                                            <li>Documenta reglas y excepciones.</li>
+                                            <li>Define fuentes confiables.</li>
+                                            <li>Decide qué debe ejecutarse automáticamente y qué debe revisarse.</li>
+                                            <li>Mejora trazabilidad antes de crecer.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2>Antes de mover más rápido, conviene entender mejor</h2>
+                            <p>Antes de mover un proceso más rápido, conviene entender qué lo vuelve lento.</p>
+                            <p>
+                                A veces la fricción está en una tarea repetitiva. Otras veces está en una regla ambigua,
+                                una fuente de información poco confiable, una excepción frecuente o una revisión manual
+                                que existe porque el proceso todavía necesita estructura.
+                            </p>
+                            <p>
+                                La tecnología puede ayudar mucho cuando el flujo está suficientemente entendido. Puede
+                                reducir carga, conectar fuentes, ejecutar reglas y liberar tiempo del equipo.
+                            </p>
+                            <p>
+                                Pero cuando el problema todavía no está claro, acelerar la ejecución puede hacer que la
+                                operación sea más difícil de controlar.
+                            </p>
+                            <p>
+                                Algunas operaciones no necesitan moverse más rápido de inmediato. Primero necesitan
+                                volverse más claras.
+                            </p>
+                            <p>
+                                Esa claridad permite decidir con mejor criterio: qué simplificar, qué rediseñar, qué
+                                conectar, qué revisar y qué sí tiene sentido llevar a una solución tecnológica.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="arx-article-core">
+                    <div class="container">
+                        <div class="arx-article-core-inner">
+                            <p class="arx-eyebrow">Arixem Core</p>
+                            <h2>De procesos entendidos a soluciones más estructuradas</h2>
+                            <p>
+                                Cuando ciertos patrones se repiten —información dispersa, revisión manual, reglas no
+                                documentadas, excepciones difíciles de priorizar— dejan de ser casos aislados.
+                            </p>
+                            <p>Pueden convertirse en soluciones más estructuradas.</p>
+                            <p>
+                                Esa es parte de la lógica detrás de Arixem Core: convertir experiencia operativa en
+                                módulos diseñados para procesos donde la información, la revisión y la trazabilidad son
+                                críticas.
+                            </p>
+                            <p>
+                                No se trata de reemplazar el criterio operativo. Se trata de darle una estructura más
+                                clara para que la tecnología pueda apoyar mejor.
+                            </p>
+                            <p>
+                                Arixem Core Contable es un ejemplo de esa evolución: una respuesta especializada para
+                                procesos donde el cruce de información, la conciliación y la revisión siguen dependiendo
+                                de esfuerzo manual intensivo.
+                            </p>
+                            <a class="arx-btn arx-btn-secondary" href="https://www.arixemcore.com/">Conocer Arixem Core</a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <section class="arx-final-cta">
+                <div class="container">
+                    <div class="arx-final-cta-inner">
+                        <h2>¿Tu operación parece lista para automatizarse, pero todavía depende demasiado de revisión manual?</h2>
+                        <p>
+                            Podemos ayudarte a entender dónde existe fricción, qué reglas necesitan claridad y si tiene
+                            sentido rediseñar, integrar o validar una solución con alcance controlado.
+                        </p>
+                        <div class="arx-actions arx-actions-center">
+                            <a class="arx-btn arx-btn-primary" href="contact.html">Explorar tu proceso</a>
+                            <a class="arx-btn arx-btn-secondary" href="ideas.html">Volver al Centro de Ideas</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget-contact">
+                            <div class="footer-widget-logo">
+                                <a href="index.html"><img src="assets/images/home-1/f-logo.png" alt="Arixem" /></a>
+                            </div>
+                            <div class="footer-disc">
+                                <p>Diseñamos tecnología con criterio para resolver procesos reales.</p>
+                                <p>
+                                    Arixem es una firma tecnológica enfocada en diseñar soluciones inteligentes para
+                                    procesos críticos de negocio, integrando IA, automatización, software y datos con
+                                    enfoque práctico y resultados medibles.
+                                </p>
+                            </div>
+                            <div class="footer_icon">
+                                <a
+                                    href="https://www.youtube.com/@arixemtechnologies"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="YouTube de Arixem"
+                                    ><i class="fab fa-youtube"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget-content">
+                            <div class="footer-widget-title">
+                                <h4>Accesos</h4>
+                            </div>
+                            <div class="footer-widget-menu">
+                                <ul>
+                                    <li><a href="index.html"><span><i class="fas fa-circle"></i></span>Inicio</a></li>
+                                    <li>
+                                        <a href="about.html"><span><i class="fas fa-circle"></i></span>Quiénes somos</a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html"><span><i class="fas fa-circle"></i></span>Servicios</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.arixemcore.com/">
+                                            <span><i class="fas fa-circle"></i></span>Arixem Core</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="cases.html"><span><i class="fas fa-circle"></i></span>Casos de uso</a>
+                                    </li>
+                                    <li>
+                                        <a href="ideas.html"><span><i class="fas fa-circle"></i></span>Centro de Ideas</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html"><span><i class="fas fa-circle"></i></span>Contacto</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.arixem.com.mx/documentos/aviso_priv_final.pdf"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <span><i class="fas fa-circle"></i></span>Aviso de privacidad</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget-content">
+                            <div class="footer-widget-title">
+                                <h4>Servicios</h4>
+                            </div>
+                            <div class="footer-widget-menu">
+                                <ul>
+                                    <li>
+                                        <a href="service.html" class="link-service">
+                                            <span><i class="fas fa-circle"></i></span>IA & Machine Learning</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="link-service">
+                                            <span><i class="fas fa-circle"></i></span>RPA</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="link-service">
+                                            <span><i class="fas fa-circle"></i></span>Desarrollo de Software</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="link-service">
+                                            <span><i class="fas fa-circle"></i></span>ERP & BI</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="link-service">
+                                            <span><i class="fas fa-circle"></i></span>CRM</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="footer-bottom-content">
+                            <h4>Arixem® - Todos los derechos reservados <i id="year" style="font-size: 13px"></i></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
+        <script src="assets/js/jquery.meanmenu.js"></script>
+        <script src="assets/js/arx-site.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0LSPEP4LR"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-Q0LSPEP4LR");
+        </script>
+    </body>
+</html>
