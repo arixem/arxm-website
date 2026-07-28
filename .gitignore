@@ -5,3 +5,6 @@
 
 # Cloudflare Pages / Wrangler
 .wrangler/
+
+# Instrucciones locales para Claude Code (no se versiona)
+CLAUDE.md
