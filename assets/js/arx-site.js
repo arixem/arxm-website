@@ -4,8 +4,7 @@
  * Reemplaza a theme.min.js (tema de terceros minificado) para el sitio
  * reconstruido con el diseño nuevo. Sólo cubre lo que el markup actual
  * usa de verdad: interacciones de menú (sidebar móvil, meanmenu, sticky
- * header), año del footer, ocultar el loader inicial y el envío del
- * formulario de contacto.
+ * header), año del footer y el envío del formulario de contacto.
  *
  * Dependencias: jQuery (assets/js/vendor/jquery-3.6.2.min.js) y
  * jquery.meanmenu.js, cargados antes que este archivo.
@@ -63,12 +62,6 @@
         var year = document.getElementById("year");
         if (year) {
             year.textContent = new Date().getFullYear();
-        }
-    }
-
-    function hideLoader() {
-        if (window.jQuery) {
-            window.jQuery(".loader_bg").fadeOut();
         }
     }
 
@@ -171,7 +164,6 @@
         bindMenuInteractions();
         bindFooterYear();
         bindContactForm();
-        hideLoader();
     }
 
     if (document.readyState === "loading") {
