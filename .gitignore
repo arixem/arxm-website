@@ -8,3 +8,6 @@
 
 # Instrucciones locales para Claude Code (no se versiona)
 CLAUDE.md
+
+# Bitacoras de sesion (notas internas de trabajo, no se versionan)
+docs/_vault/01-sesiones/
